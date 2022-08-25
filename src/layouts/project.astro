@@ -1,7 +1,7 @@
 ---
-import MainHead from "../components/MainHead.astro";
 import Button from "../components/Button/index.jsx";
 import Footer from "../components/Footer/index.jsx";
+import MainHead from "../components/MainHead.astro";
 import Nav from "../components/Nav/index.jsx";
 
 const { content } = Astro.props;
@@ -85,6 +85,12 @@ const { content } = Astro.props;
 			<a href="/projects">
 				<Button>View More</Button>
 			</a>
+			&nbsp;
+			{content.repo && 
+				<a href={content.repo} target="_blank">
+					<Button>Github Repo</Button>
+				</a>
+			}
 		</footer>
 		<Footer />
 	</body>
