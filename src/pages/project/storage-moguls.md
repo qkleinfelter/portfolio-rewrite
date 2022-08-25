@@ -13,5 +13,21 @@ tags:
   - flutter
 ---
 
+# Overview
+
 Storage Moguls is a warehouse management system built in Flutter by myself and 4
 classmates as our capstone project for the University of Toledo Senior Design class.
+We chose to build our application in Flutter to allow us to easily deploy the code
+on multiple platforms, while stil maintaining a single codebase. We demonstrated
+at the Senior Design Expo having the application deployed on the Web, as an Android
+Application and as a Windows Application.
+
+## Architecture
+
+We wrote our backend for this application in Node.js with Typescript. We used the Koa
+package to build out our API Server, alongside the Prisma ORM to access our database.
+Our database for this application was PostgreSQL which worked seamlessly with Prisma to
+allow easy use of the Database in our API. Our application also was available to the users
+as an easy to use and deploy Docker container, allowing us to easily spin up new instances
+whenever needed, including with our automated test and deployment suite setup via
+Github Actions.
